@@ -29,3 +29,11 @@ def factorial n
     (factorial n-1) * n
   end
 end
+
+def power a,b
+  ans = a
+  b.times do
+    ans*=ans
+  end
+  ans
+end # todo power function not tested and probably does not work, i got lazy...

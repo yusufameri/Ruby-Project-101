@@ -86,7 +86,17 @@ describe "#multiply" do
 end
 
 describe "#power" do
-  it "raises one number to the power of another number"
+  it "raises one number to the power of another number" do
+   power(3,2).should be 9
+  end
+  
+  it "raises a number to power of zero" do
+    power(3,0).should be 1
+  end
+ 
+  it "raises one number to the power of 1" do
+    power(3,1).should be 3
+  end
 end
 
 # http://en.wikipedia.org/wiki/Factorial
