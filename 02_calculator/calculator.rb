@@ -14,6 +14,18 @@ def sum arr
   sum
 end
 
-def multiply a,b
-  a*b
+def multiply a,*b
+  sumb = 1;
+  b.each do |i|
+    sumb*i
+  end
+  sumb*a
+end
+
+def factorial n
+  if n <= 1
+    1
+  else
+    (factorial n-1) * n
+  end
 end
